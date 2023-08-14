@@ -1,0 +1,15 @@
+// common file start here
+@import "./commonfile/extend";
+@import "./commonfile/variable";
+@import "./commonfile/mixin";
+@import "./commonfile/common";
+
+// project file start here
+@import "./Projectfile/navbar";
+@import "./Projectfile/banner";
+@import "./Projectfile/product";
+@import "./Projectfile/aboutpro";
+@import "./Projectfile/Review";
+@import "./Projectfile/Services";
+@import "./Projectfile/contact";
+@import "./Projectfile/footer";

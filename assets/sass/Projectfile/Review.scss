@@ -1,0 +1,65 @@
+.review {
+  width: 100%;
+  padding: 150px 0;
+  .review-heading {
+    text-align: center;
+    h1 {
+      @extend %bgcolor;
+      font-size: 50px;
+      font-weight: 600;
+      span {
+        @extend %colorforallheading;
+      }
+    }
+  }
+}
+.allcustomers {
+  margin-top: 50px;
+  .customes {
+    background: #fff;
+    box-shadow: 0 0 8px #000;
+    padding: 15px 30px;
+    .profile {
+      display: flex;
+      align-items: center;
+      .customers-img {
+        width: 100px;
+        height: 100px;
+        background: #696969;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px;
+        img {
+          width: 100%;
+          transition: 0.5s;
+        }
+      }
+      .name {
+        h3 {
+          font-size: 20px;
+        }
+        .allstar {
+          margin-top: 6px;
+          i {
+            color: orange;
+          }
+        }
+      }
+    }
+    .comments {
+      margin-top: 15px;
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 26px;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.5);
+        transition: 0.5s;
+      }
+    }
+  }
+}

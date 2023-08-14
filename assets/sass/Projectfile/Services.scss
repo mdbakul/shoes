@@ -1,0 +1,36 @@
+.our_services {
+  width: 100%;
+  padding: 80px 0px;
+  .our_heading {
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      @extend %colorforallheading;
+      font-weight: 600;
+      font-size: 50px;
+
+      span {
+        @extend %bgcolor;
+      }
+    }
+  }
+  .service_content {
+    margin-top: 40px;
+    padding: 0 180px;
+    .main-content {
+      text-align: center;
+      i {
+        color: orange;
+        font-size: 40px;
+      }
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 0;
+      }
+      p {
+
+      }
+    }
+  }
+}

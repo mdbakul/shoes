@@ -1,0 +1,90 @@
+.product {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 10px #000;  
+  padding: 80px 0;  
+  .heading {
+    text-align: center;
+    h1 {
+      text-transform: uppercase;
+      @extend %colorforallheading;
+      font-weight: 600;
+      font-size: 50px;
+    }
+  }
+  .allproduct {
+    margin-top: 90px;
+    .pro-iteam {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 8px #000;
+      padding: 40px 20px;
+      position: relative;
+      text-align: center;
+      .about-icons {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateX(-10px);
+        opacity: 0;
+        transition: 2s;
+        i {
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          border: 2px solid $themecolor;
+          transition: 0.2s;
+          &:hover {
+            color: $themecolor;
+            transform: translateX(5px);
+            transition: 0.2s;
+          }
+        }
+      }
+      img {
+        width: 80%;
+        transition: 0.3s;
+      }
+      h3 {
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 600;
+      }
+      p {
+        margin: 10px 0;
+      }
+      h5 {
+        font-weight: 600;
+      }
+      .allstar {
+        margin: 10px 0;
+        i {
+          color: orange;
+        }
+      }
+      .ab-btn {
+        margin-top: 10px;
+        a {
+          background: $themecolor;
+          padding: 12px 30px;
+          color: #fff;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+      }
+      &:hover {
+        .about-icons {
+          transform: translateX(15px);
+          opacity: 1;
+          transition: 2s;
+        }
+        img {
+          transform: scale(1.1);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.nav {
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 8px #000;
+  z-index: 9999;
+  position: fixed;
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    .logo {
+      padding: 20px 0;
+      cursor: pointer;
+      h1 {
+        font-size: 40px;
+        color: $themecolor;
+        font-weight: 600;
+
+        span {
+          color: #76bb04;
+          text-decoration: underline;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      transition: 1s;
+      @include breakpoint(max-lg) {
+        flex-direction: column;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.3s;
+        margin: 0 20px;
+        padding: 20px;
+      }
+      &.main_active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: 1s;
+        background: #76bb04;
+      }
+      li {
+        padding: 0 20px;
+        @include breakpoint(max-lg) {
+          margin-top: 20px;
+        }
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          color: #000;
+          &:hover {
+            color: $themecolor;
+          }
+        }
+      }
+    }
+    .icons {
+      i {
+        margin: 0 9px;
+        font-size: 17px;
+        &:hover {
+          color: $themecolor;
+        }
+      }
+    }
+    .bar {
+      display: none;
+      @include breakpoint(max-lg) {
+        display: block;
+      }
+      i {
+        cursor: pointer;
+        font-size: 20px;
+        &.active {
+          transform: rotate(360deg);
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.contact {
+  padding: 200px 0;
+  background: url("..//..//image/loging_bg.png");
+  background-position: center;
+  background-size: cover;
+  .left-img {
+    img {
+      width: 100%;
+    }
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    form {
+      h2 {
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      p {
+        font-size: 17px;
+        margin-bottom: 5px;
+        font-weight: 400;
+      }
+      .user {
+        @extend %input;
+        margin-bottom: 20px;
+        i {
+          width: 5%;
+          margin-left: 5px;
+        }
+        input {
+          @extend %input2;
+        }
+      }
+
+      .pass {
+        @extend %input;
+        i {
+          width: 5%;
+          margin-left: 5px;
+        }
+        input {
+          @extend %input2;
+        }
+      }
+      .forget {
+        margin-top: 15px;
+        text-align: right;
+        cursor: pointer;
+      }
+      .contact-btn {
+        text-align: center;
+        margin-top: 30px;
+        a {
+          padding: 10px 160px;
+          background: linear-gradient(to right, #e23944, #8b19ba);
+          color: #fff;
+          font-weight: 600;
+          font-size: 16px;
+          border-radius: 10px;
+          &:hover {
+            background: linear-gradient(to right, #8b19ba, #e23944);
+            transition: 1s;
+          }
+        }
+      }
+
+      .social-icons {
+        width: 170px;
+        margin: 0 auto;
+        .iconbox {
+          display: inline-block;
+          margin-top: 20px;
+
+          i {
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 6px;
+            cursor: pointer;
+            color: #8b19ba;
+            transition: 0.3s;
+            &:hover {
+              background: #e23944;
+              color: #fff;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

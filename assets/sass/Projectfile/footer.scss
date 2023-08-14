@@ -1,0 +1,140 @@
+.footer {
+  padding: 40px 0;
+  background: #f3f1f1;
+  width: 100%;
+  text-align: center;
+  .containers {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact-heading {
+    h3 {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .social-contact {
+      .home {
+        display: flex;
+        i {
+          margin-right: 5px;
+          &:hover {
+            color: $themecolor;
+          }
+        }
+      }
+      .phone {
+        display: flex;
+        margin: 15px 0;
+        i {
+          margin-right: 5px;
+          &:hover {
+            color: $themecolor;
+          }
+        }
+      }
+      .mail {
+        display: flex;
+        i {
+          margin-right: 5px;
+          &:hover {
+            color: $themecolor;
+          }
+        }
+      }
+    }
+  }
+  .healp-heading {
+    h3 {
+      margin-bottom: 20px;
+    }
+    .healping-tag {
+      a {
+        display: block;
+        font-size: 16px;
+        color: #000;
+        margin-top: 8px;
+      }
+    }
+  }
+  .stories-heading {
+    h3 {
+      margin-bottom: 20px;
+    }
+    .stories-tag {
+      a {
+        display: block;
+        font-size: 16px;
+        color: #000;
+        margin-top: 8px;
+      }
+    }
+  }
+  .fellowus {
+    width: 200px;
+    margin: 0 auto;
+    h3 {
+      margin-bottom: 20px;
+    }
+    .social-icon {
+      display: flex;
+      text-align: center;
+      i {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 6px;
+        cursor: pointer;
+        color: #8b19ba;
+        transition: 0.3s;
+        &:hover {
+          background: #e23944;
+          color: #fff;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  .news {
+    h3 {
+      margin-bottom: 20px;
+    }
+    .newslater {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      input {
+        background: #cacaca;
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        width: 70%;
+        border-radius: 20px;
+      }
+      ::placeholder {
+        color: #8b19ba;
+        font-weight: 500;
+      }
+      a {
+        margin-top: 20px;
+        padding: 7px 30px;
+        background: #fff;
+        border-radius: 50px;
+        color: #000;
+        font-size: 17px;
+        font-weight: 500;
+        transition: 0.3s;
+        &:hover {
+          box-shadow: 0 0 15px #000;
+          transition: 0.3s;
+          background: #cacaca;
+          color: #8b19ba;
+        }
+      }
+    }
+  }
+}

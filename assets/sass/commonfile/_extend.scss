@@ -1,0 +1,26 @@
+%colorforallheading {
+  background: linear-gradient(to right, #8918bb, #b61d9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+%bgcolor {
+  background: linear-gradient(to right, #76bb04, #76bb04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+%input {
+  background: transparent;
+  border: 2px solid #b91e9b;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-radius: 5px;
+}
+
+%input2 {
+  width: 95%;
+  outline: none;
+  background: transparent;
+  border: none;
+}
